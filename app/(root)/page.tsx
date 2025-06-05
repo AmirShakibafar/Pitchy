@@ -1,9 +1,15 @@
 // app/signin/page.tsx
 
+import SearchForm from "../components/SearchForm";
+
 export default function Home() {
   return (
-    <main className="p-4">
-      <h1 className="pink-container">Home</h1>
+    <main>
+      <section className="pink-container">
+        <h1 className="heading">Present Your Ideas <br /> Connect with Entrepreneurs</h1>
+        <p className="sub-heading !max-w-3xl">Submit your idea, vote on pitches and get noticed in virtual competitions</p>
+        <SearchForm/>
+      </section>
     </main>
   );
 }
