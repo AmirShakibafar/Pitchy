@@ -3,30 +3,6 @@
 
 @custom-variant dark (&:is(.dark *));
 
-@theme {
-  --font-work-sans: "Work Sans", sans-serif;
-  --breakpoint-xs: 475px;
-
-  --color-primary-100: #ffe8f0;
-  --color-primary: #ee2b69;
-  --color-secondary: #fbe843;
-
-  --color-black-100: #333333;
-  --color-black-200: #141413;
-  --color-black-300: #7d8087;
-  --color-black: #000000;
-
-  --color-white-100: #f7f7f7;
-  --color-white: #ffffff;
-
-  --radius: 12px;
-  --radius-md: calc(var(--radius) - 2px);
-  --radius-sm: calc(var(--radius) - 4px);
-
-  --shadow-100: 2px 2px 0 0 rgb(0 0 0);
-  --shadow-200: 2px 2px 0 2px rgb(0 0 0);
-  --shadow-300: 2px 2px 0 2px rgb(238 43 105);
-}
 
 @layer base {
   :root {
@@ -348,6 +324,32 @@ body {
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.551 0.027 264.364);
 }
+
+@theme {
+  --font-work-sans: "Work Sans", sans-serif;
+  --breakpoint-xs: 475px;
+
+  --color-primary-100: #ffe8f0;
+  --color-primary: #ee2b69;
+  --color-secondary: #fbe843;
+
+  --color-black-100: #333333;
+  --color-black-200: #141413;
+  --color-black-300: #7d8087;
+  --color-black: #000000;
+
+  --color-white-100: #f7f7f7;
+  --color-white: #ffffff;
+
+  --radius: 12px;
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-sm: calc(var(--radius) - 4px);
+
+  --shadow-100: 2px 2px 0 0 rgb(0 0 0);
+  --shadow-200: 2px 2px 0 2px rgb(0 0 0);
+  --shadow-300: 2px 2px 0 2px rgb(238 43 105);
+}
+
 
 @layer base {
   * {
