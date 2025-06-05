@@ -46,6 +46,7 @@ const Navbar = async () => {
                 <span>Login</span>
               </button>
             </form>
+            
           )}
         </div>
       </nav>
