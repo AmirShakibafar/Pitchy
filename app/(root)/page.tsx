@@ -1,6 +1,6 @@
 // app/signin/page.tsx
 
-import SearchForm from "../components/SearchForm";
+import SearchForm from "../../components/SearchForm";
 
 export default async function Home({
   searchParams,
@@ -18,7 +18,7 @@ export default async function Home({
           Submit your idea, vote on pitches and get noticed in virtual
           competitions
         </p>
-        <SearchForm query={query}/>
+        <SearchForm query={query} />
       </section>
     </main>
   );
