@@ -1,7 +1,7 @@
 // app/signin/page.tsx
 
 import SearchForm from "@/components/SearchForm";
-import StartupCard from "@/components/StartupCard";
+import StartupCard, { StartupTypeCard } from "@/components/StartupCard";
 import {client} from "@/sanity/lib/client";
 import {STARTUPS_QUERY} from "@/sanity/lib/queries";
 export default async function Home({
@@ -11,20 +11,7 @@ export default async function Home({
 }) {
   const query = (await searchParams).query;
   const posts = await client.fetch(STARTUPS_QUERY);
-  console.log(JSON.stringify(posts));
-  // const posts = [
-  //   {
-  //     _createdAt: new Date(),
-  //     views: 55,
-  //     author: { _id: 1, name: "Amir Shakibafar"},
-  //     _id: 1,
-  //     description: "im explaining",
-  //     image:
-  //       "https://images.unsplash.com/photo-1742832599361-7aa7decd73b4?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  //     category: "woman",
-  //     title: "me like",
-  //   },
-  // ];
+
   return (
     <main>
       <section className="pink-container">
@@ -44,7 +31,7 @@ export default async function Home({
 
         <ul className="mt-7 card_grid">
           {posts?.length > 0 ? (
-            posts.map((post: StartupCardType, idx: number) => <StartupCard key={idx} post={post}/>)
+            posts.map((post: StartupTypeCard , idx: number) => <StartupCard key={idx} post={post}/>)
           ) : (
             <p className="no-result">No Startups Found</p>
           )}
