@@ -1,5 +1,4 @@
 import { defineType,  defineField} from "sanity";
-import {rule} from "postcss";
 
 export const startup = defineType({
     name: "startup",
@@ -32,7 +31,7 @@ export const startup = defineType({
         }),
         defineField({
             name: "category",
-            type: "text",
+            type: "string",
             validation: (Rule) => Rule.min(1).max(20).required().error("please enter a category"),
         }),
         defineField({
