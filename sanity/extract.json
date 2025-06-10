@@ -79,7 +79,7 @@
         },
         "optional": true
       },
-      "veiws": {
+      "views": {
         "type": "objectAttribute",
         "value": {
           "type": "number"

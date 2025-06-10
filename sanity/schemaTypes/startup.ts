@@ -22,7 +22,7 @@ export const startup = defineType({
             to:  {type: "author"},
         }),
         defineField({
-            name: "veiws",
+            name: "views",
             type: "number",
         }),
         defineField({
