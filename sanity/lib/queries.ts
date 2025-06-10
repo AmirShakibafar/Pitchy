@@ -37,3 +37,9 @@ export const STARTUP_BY_ID_QUERY =
     slug,
     description
 }`);
+
+export const STARTUP_VIEW_BY_ID_QUERY =
+  defineQuery(`*[_type == "startup" && _id == $id][0] {
+    _id,
+    views,
+}`);
